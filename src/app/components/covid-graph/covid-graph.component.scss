@@ -1,0 +1,11 @@
+button{
+  font-size: 1.5em;
+  &:hover{
+    background-color: #000;
+  }
+
+}
+
+.btn.active{
+  background-color: #000;
+}

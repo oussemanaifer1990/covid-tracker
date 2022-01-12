@@ -1,0 +1,31 @@
+<div class="row text-center m-5">
+  <div class="col-md-6">
+    <button type="button" class="btn btn-success w-50 m-2 "  [class.active]="show===true" (click)="clickFirst()">First dose</button>
+  </div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-success w-50 m-2" [class.active]="show===false" (click)="clickSecond()">Second dose</button>
+  </div>
+</div>
+
+<div class="row text-center m-5" *ngIf="show">
+  <div class="col-md-6">
+    <div id="container" ></div>
+  </div>
+  <div class="col-md-6">
+    <div id="containerF_day" ></div>
+  </div>
+</div>
+
+
+<div class="row text-center m-5" *ngIf="!show">
+  <div class="col-md-6">
+    <div id="containerS-year" ></div>
+  </div>
+  <div class="col-md-6">
+    <div id="containerS_day"></div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row list-bloc m-4" *ngFor="let em of lisV;">
+    <div class="col-md-4" >
+      <h3>Number of people affected  in a country in a day</h3>
+      <p>{{ em?.firstVaccin | number:'1.0':'en-US' }}</p>
+    </div>
+    <div class="col-md-4" >
+      <h3>Number of people affected  in a country in a month</h3>
+      <p>{{ em?.secondVaccin | number:'1.0':'en-US'
+        }}</p>
+    </div>
+    <div class="col-md-4">
+      <h3>The trend of the infection over the year</h3>
+      <p>{{ em?.totalVaccin | number:'1.0':'en-US'}}</p>
+
+    </div>
+  </div>
+</div>
